@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * check_cycle - Checks if a singly-linked list contains a cycle.
@@ -21,6 +21,6 @@ int check_cycle(listint_t *list)
 		if (slow == fast)
 			return (1);
 	}
-	
 	return (0);
-}	
+}
+
