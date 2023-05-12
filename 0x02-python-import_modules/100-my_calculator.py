@@ -4,13 +4,13 @@ if _name_ == "_main_":
     from calculator_1 import add, sub, mul, div
     argc = len(argv)
     if argc != 4:
-        print('usage: {} <a> <operator> <b>'.format(argv[0]))
+        print('Usage: {} <a> <operator> <b>'.format(argv[0]))
         exit(1)
     ops = {
         '+': add,
         '-': sub,
         '*': mul,
-        '/': div,
+        '/': div
     }
     if argv[2] in ops:
         num1 = int(argv[1])
@@ -22,4 +22,3 @@ if _name_ == "_main_":
         print('Unknown operator. Available operator: +, -, * and /')
         exit(1)
     exit(0)
-
