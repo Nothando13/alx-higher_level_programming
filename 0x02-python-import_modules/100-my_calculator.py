@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if _name_ == "_main_":
+if _name_ == 
     from sys import argv
     from calculator_1 import add, sub, mul, div
     argc = len(argv)
