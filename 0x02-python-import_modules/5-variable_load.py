@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-from variable_load_5 import a
+import sys
+import hidden_4
 
-def find_var():
-    print(a)
-
-if _name_ == "_main_":
-    find_var()
+if __name__ == '__main__':
+    data = dir(hidden_4)
+    for item in data:
+        if (item[:2]) != '__':
+            print("{}".format(item))
