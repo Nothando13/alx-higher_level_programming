@@ -13,7 +13,7 @@ int palindrome(listint_t **l, listint_t *r)
         if (r != NULL)
         {
                response = palindrome(1, r->next);
-               if (resonse != 0)
+               if (response != 0)
                {
                       response = (r->n == (*l)->n);
                       *l = (*l)->next;
