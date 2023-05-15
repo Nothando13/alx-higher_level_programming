@@ -2,7 +2,7 @@
 import sys
 import hidden_4
 
-if __name__ == '__main__':
+if '__name__' == '__main__':
     data = dir(hidden_4)
     for item in data:
         if (item[:2]) != '__':
