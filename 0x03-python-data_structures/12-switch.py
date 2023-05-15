@@ -1,20 +1,14 @@
 #!/usr/bin/python3
 a = 89
 b = 10
-<<<<<<< HEAD
 print("a={:d} - b={:d}".format(a, b))
-=======
 a, b = b, a
-print("={:d} - b={:d}".format(a, b))
->>>>>>> ffdd96fbd78609e11136213d5dad2e112d69e95e
-
 vi 13-is_palindrome.c
 
 #include "lists.h"
 
 /**
  * reverse_listint - reverses a linked list
-<<<<<<< HEAD
  * @head: pointer tp the first node in the list
  *
  * Return: pointer to the first node in the new list
@@ -32,9 +26,8 @@ void reverse_listint(listint_t **head)
       prev = current;
       current = next;
    }
-  
  *head = prev;
-=======
+
  * @head: pointer to the first node in the list
  *
  * Return: pointer to the first node in new list
@@ -54,7 +47,6 @@ void reverse_listint(listint_t **head)
         }
       
       *head = prev;
->>>>>>> ffdd96fbd78609e11136213d5dad2e112d69e95e
 }
 
 /**
@@ -63,7 +55,7 @@ void reverse_listint(listint_t **head)
  *
  * Return: 1 if it is, 0 if not
  */
-<<<<<<< HEAD
+
 int is_palindrome(listint_t **head)
 {
   listint_t *slow = *head, *fast = *head, *temp = *head, *dup = NULL;
@@ -106,7 +98,6 @@ int is_palindrome(listint_t **head)
   return (0);
 }
 
-=======
 int is palindrome(listint_t **head, *fast = *head, *temp = *head, *dup = NULL;
 {        
         if (*head == NULL || (*head)->next == NULL
@@ -143,4 +134,3 @@ int is palindrome(listint_t **head, *fast = *head, *temp = *head, *dup = NULL;
 
         return (0);
 }
->>>>>>> ffdd96fbd78609e11136213d5dad2e112d69e95e
