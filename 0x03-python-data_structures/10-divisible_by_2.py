@@ -6,4 +6,11 @@ def divisible_by_2(my_list=[]):
             boolist[count] = True
         else:
             boolist[count] = False
+<<<<<<< HEAD
     return(boolist)
+=======
+    return(boolist)        
+
+
+
+>>>>>>> ffdd96fbd78609e11136213d5dad2e112d69e95e

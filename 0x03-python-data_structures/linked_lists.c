@@ -72,6 +72,7 @@ void free_listint(listint_t *head)
         free(current);
     }
 }
+<<<<<<< HEAD
 carrie@ubuntu:0x03$
 carrie@ubuntu:0x03$ cat 13-main.c
 #include <stdio.h>
@@ -108,3 +109,5 @@ int main(void)
     free_listint(head);
 
     return (0);
+=======
+>>>>>>> ffdd96fbd78609e11136213d5dad2e112d69e95e
