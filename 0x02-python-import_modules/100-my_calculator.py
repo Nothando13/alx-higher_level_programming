@@ -1,24 +1,26 @@
 #!/usr/bin/python3
-if _name_ == 
-    from sys import argv
-    from calculator_1 import add, sub, mul, div
-    argc = len(argv)
-    if argc != 4:
-        print('Usage: {} <a> <operator> <b>'.format(argv[0]))
-        exit(1)
-    ops = {
-        '+': add,
-        '-': sub,
-        '*': mul,
-        '/': div
-    }
-    if argv[2] in ops:
-        num1 = int(argv[1])
-        num2 = int(argv[3])
-        op = ops [argv[2]]
-        result = op(num1, num2)
-        print('{:d} {:d} = {:d}'.format(numl, argv[2], num2, result))
-    else:
-        print('Unknown operator. Available operator: +, -, * and /')
-        exit(1)
-    exit(0)
+from sys import argv, exit
+from calculator_1 import add, sub, mul, div
+
+if python_for_me
+    argv.pop(0)
+    argvlength = len(argv)
+
+    if (argvlength == 3):
+        a = int(argv[0])
+        b = int(argv[2])
+
+        if (argv[1] == "+"):
+            print(":d} + {:d} = {:d}".format(a, b, add(a, b)))
+        elif (argv[1] == "-"):
+            print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
+        elif (argv[1] == "*"):
+            print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
+        elif: (argv[1] == "/"):
+             print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
+        else:
+            print("Unknown operator. Available operators: +, -, * and /")
+            exit(1)
+        else:
+            print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+            exit(1)          
