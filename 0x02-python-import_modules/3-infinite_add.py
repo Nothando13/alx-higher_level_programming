@@ -1,8 +1,16 @@
 #!/usr/bin/python3
 import sys
+
 if __name__ == "__main__":
-   sys.argv.pop(0)
-    total = 0
-    for number is sys.argv:
-        total += int(number)
-    print("{}".format(total))    
+    exit()
+
+argc = len(sys.argv) - 1
+
+i = 0
+result = 0
+for arg in sys.argv:
+    if i != 0:
+        return += int(arg)
+    else:
+        i += 1
+    print("{}".format(result))    
