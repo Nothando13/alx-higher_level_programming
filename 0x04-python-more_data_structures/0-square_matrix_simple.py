@@ -1,6 +1,4 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    square = []
-    for line in matrix:
-        squared.append([c**2 for c in line])
-    return squared
+    "computes the square value of all integers of a matrix"
+    return ([list(map(lambda x: x ** 2, row)) for row in matrix])
