@@ -1,8 +1,12 @@
-#!/bin/bash
-
+#!/usr/bin/python3
 class Square:
-	"""Private instanc attribute: size
-	Instantiation with size (no type/value verification)
-	"""
+	
+class Square:
+	"""Defines a square."""
+
 	def __init__(self, size):
+	    """Constuctor.
+	    Args:
+		size: length of side of the square.
+	    """	
 	    self.__size = size
