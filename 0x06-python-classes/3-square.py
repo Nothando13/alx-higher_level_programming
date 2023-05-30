@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 class Square:
 	"""Defines a square"""
 	def __init__(self, size=0):
@@ -7,8 +8,9 @@ class Square:
 	if type(size) != int:
 	    raise TypeError("Size must be an integer")
 	if size < 0:
-		raise ValueError("size must be integer")
-	
+		raise ValueError("size must be >= 0")
+	self.__size = size
+
 	def area(self):
 	    """Returns current square area"""
 		return self.__size**2	
