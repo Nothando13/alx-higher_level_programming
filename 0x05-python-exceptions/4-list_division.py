@@ -2,12 +2,6 @@
 
 
 def list_division(my_list_1, my_list_2, list_length):
-	"""
-	takes two lists and creates a new list with result of division
-	operation
-
-	handles errors and prints them to stdout
-	"""
 	i = 0
 	new_list = []
 	result = 0
@@ -25,4 +19,5 @@ def list_division(my_list_1, my_list_2, list_length):
 		print("out of range")
 	    finally:
 		new_list.append(result)
+
 	return new_list
