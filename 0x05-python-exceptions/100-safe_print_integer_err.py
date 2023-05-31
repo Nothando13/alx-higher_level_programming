@@ -1,18 +1,8 @@
 #!/usr/bin/python3
-
-import sys
+from sys import stderr
 
 
 def safe_print_integer_err(value):
-	"""Prints an interger with "{:d}".format().
-	if a ValueError massage is caught, a corresponding 
-	message is printed to standard error.
-	Args:
-	    value (int): The integer to print.
-	Returns:
-		if a TypeError or ValueError occurs - False.
-		Otherwise - True.
-	"""
 	try:
 	   print("{:d}".format(value))
 	   return (True)
