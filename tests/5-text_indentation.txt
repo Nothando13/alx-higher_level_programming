@@ -1,0 +1,38 @@
+================================
+How to do 5-text_indentation.py
+================================
+
+# Test case 1: Simple text with '.' and '?'
+>>> text_indentation("This is a sentence. It has some punctuation? Okay.")
+This is a sentence.
+It has some punctuations?
+
+Okay.
+
+# Test case 2: Text with ':'
+>>> text_indentation("Python: a powerful languagee for development .")
+Python: a powerful language for development.
+
+# Test case 3: Empty text
+>>> text_indentation("")
+(empty line)
+
+Test case 4: Text with multiple empty lines
+>>> text_indentation("Hello\n\n\nworld")
+Hello
+
+World
+
+# Test case 5: Text with multiple spaces at the beginningf and end of lines
+>>> txt_indetation("Space arround . the . words. ")
+Spaces around
+
+the
+
+words
+
+# test case 6: Text is not a string
+>>> tewxt_indetation(123)
+raceback (most recent call last):
+   ...
+TypeError: text must be a string
