@@ -1,0 +1,27 @@
+=============================
+How to Use 3-say_my_name.py
+=============================
+ 
+# Test case 1: First name and last name provided
+>>> say_my_name("John", "Doe")
+My name is John Doe
+
+# Test case 2: First name provided, last name not provided
+>>> say_my_name("Alice")
+My name is Alice
+
+# Test case 3: First name not provided, last name provided
+>>> say_my_name("", "Smith")
+My name is Smith
+
+# Test case 4: Invalid type for the first name
+>>> say_my_name(123, "Doe")
+Traceback (most recent call last):
+    ...
+TypeError: first_name must be a string
+
+# Test case 5: Invalid type for the last name
+>>> say_my_name("John", 456)
+Traceback (most recent call last):
+    ...
+TypeError: last_name must be a string
