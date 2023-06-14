@@ -9,25 +9,21 @@ Module with the class Rectangle
 
 
 class Rectangle(BaseGeometry):
-    """
-    Rectangle class that inherits from BaseGeometry.
+    """Rectangle class that inherits from BaseGeometry"""
 
-     This class represents a rectangle and inherits functionality from the BaseGeometry class.
-    """
-
-    def __init__(self, width, height):
-        """
-        Initializes a new Rectangle object.
-
-        Args:
-            width (int): The width of the rectangle.
-            height (int): The height of the rectangle.
-
-        Raises:
-            TypeError: If width or height is not an integer.
-            ValueError: If width or height is less than or equal to 0.
-        """
+     def __init__(self, width, height):
+        """Method for initialized the attrubutes"""
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
         self.__height = height
+
+    def area(self):
+        """Method to redefine a area method in the parent class"""
+
+        return self.__width * self.__height
+
+    def __str__(self):
+        """__str__ method for return the next string"""
+
+        return "[Rectangle] {}/{}".format(self.__width, self.__height)
