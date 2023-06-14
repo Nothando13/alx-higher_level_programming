@@ -1,6 +1,12 @@
 #!/usr/bin/python3
-"""Defines rectangle instance that inherit from super class."""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+"""
+=================================
+Module with class Rectangle
+=================================
+"""
+
 
 
 class Rectangle(BaseGeometry):
